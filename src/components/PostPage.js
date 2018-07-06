@@ -32,7 +32,9 @@ class PostPage extends Component {
       </article>
     ))
     return (
-      allPosts
+      <div style={{ marginTop: '12%' }}>
+        {allPosts}
+      </div>
     )
   }
 }

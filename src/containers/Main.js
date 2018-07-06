@@ -6,7 +6,7 @@ import ProfilePage from '../components/ProfilePage'
 const Main = () => {
 
   return (
-    <div style={{ marginTop: '13%' }}>
+    <div>
       <Route exact path='/' render={props => <PostPage {...props} />} />
       <Route exact path='/profile' render={props => <ProfilePage {...props} />} />
     </div>
