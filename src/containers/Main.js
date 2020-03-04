@@ -1,16 +1,15 @@
-import React from 'react'
-import { Route } from 'react-router-dom'
-import PostPage from '../components/PostPage'
-import ProfilePage from '../components/ProfilePage'
+import React from "react";
+import { Router } from "@reach/router";
+import PostPage from "../components/PostPage";
+import ProfilePage from "../components/ProfilePage";
 
 const Main = () => {
-
   return (
-    <div>
-      <Route exact path='/' render={props => <PostPage {...props} />} />
-      <Route exact path='/profile' render={props => <ProfilePage {...props} />} />
-    </div>
-  )
-}
+    <Router>
+      <PostPage path="/" />
+      <ProfilePage path="/profile" />
+    </Router>
+  );
+};
 
-export default Main
+export default Main;
