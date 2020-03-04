@@ -1,10 +1,9 @@
 import React from 'react'
 
-const ProfilePost = (props) => {
-  const { post, index } = props
+const ProfilePost = ({ photo }) => {
   return (
     <div className='col-md-4'>
-      <img className='img-thumbnail all-img' alt={`post${index}`} src={post} />
+      <img className='img-thumbnail all-img' alt="" src={photo} />
     </div>
   )
 }
