@@ -1,9 +1,9 @@
 import React from 'react'
 
-const PostBody = ({ post, i }) => (
+const PostBody = ({ imageUrl }) => (
   <div className='Post-image'>
     <div className='Post-image-bg'>
-      <img src={post} alt={`ig${i}`} />
+      <img src={imageUrl} alt="" />
     </div>
   </div>
 )
